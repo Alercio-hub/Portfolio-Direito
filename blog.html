@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta name="google-site-verification" content="Zj1jiKBuLNxUYiI8Meq1jtz8VuODAyBJrfjRitqrfWs" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog - Sabias que?</title>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4926324815388217"
+     crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BCDVF5L0H2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BCDVF5L0H2');
+</script>
+     
+  <style>
+    /* Reset básico e fontes */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+    /* Navbar */
+    .navbar {
+      background-color: #1e3c72;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    .navbar a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 20px;
+      font-weight: bold;
+    }
+    .navbar .logo {
+      height: 40px;
+    }
+    .navbar .sabias {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .navbar .sabias a {
+      color: #00c3ff;
+      text-decoration: none;
+      margin-left: 5px;
+    }
+    /* Layout: sidebar + main content */
+    .container {
+      display: flex;
+      margin: 20px;
+    }
+    .sidebar {
+      width: 250px;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      margin-right: 20px;
+      border-radius: 5px;
+    }
+    .sidebar h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #1e3c72;
+    }
+    .sidebar select {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .main-content {
+      flex: 1;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      border-radius: 5px;
+    }
+    .main-content h1 {
+      color: #1e3c72;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        margin: 10px;
+      }
+      .sidebar {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <a href="index.html">
+        <img src="https://media.licdn.com/dms/image/D4D12AQHHs7oXWxCpLg/article-cover_image-shrink_600_2000/0/1688732813668?e=2147483647&v=beta&t=bWglcUMVtuJsZ0JawZ5810wfMnEbibbiTHuCZ03V6xo" alt="Logo" class="logo">
+
+    </div>
+    <div class="navbar-center">
+      <a href="index.html" class="nav-link">Página Principal</a>
+    </div>
+    <div class="navbar-right">
+      <a href="curso.html">Cursos</a>
+    </div>
+     <div class="navbar-right">
+      <a href="https://buymeacoffee.com/simbinealer" target="_blank">Compre-me um Café</a>
+    </div>
+  </nav>
+
+  <!-- Container principal -->
+  <div class="container">
+    <!-- Sidebar com dropdown para artigos -->
+    <aside class="sidebar">
+      <h3>Artigos Publicados</h3>
+      <select id="articleDropdown" onchange="if(this.value){ window.location.href=this.value; }">
+        <option value="">Selecione um artigo</option>
+        <option value= ./blog/artigos/artigo1.html>Artigo 1: Direito à Licença por Adopção</option>
+        <option value=./blog/artigos/artigo2.html>Artigo 2: O direito à manifestações e o regime das faltas justificadas</option>
+        <option value=./blog/artigos/artigo3.html>Artigo 3: A inteligência artificial e o fim do capitalismo</option>
+        <!-- Adicione mais artigos conforme necessário -->
+      </select>
+    </aside>
+
+    <!-- Conteúdo principal -->
+    <main class="main-content">
+      <h1>Bem-vindo ao Blog!</h1>
+      <p>Aqui você encontrará artigos e informações relevantes sobre temas jurídicos e um pouco sobre cultura geral e política.</p>
+      <p><strong>Clique na barra Cursos para aceder a diversos cursos, dentre os quais um curso completo de Direito e um de Inglês</strong></p>
+      <!-- Aqui você pode adicionar mais conteúdos, imagens ou destaques -->
+             <!-- Seção de apoio -->
+      <div class="support-section">
+        <p style="color:white">Gostou do nosso conteúdo? Se quiser apoiar a página, pode <a href="https://buymeacoffee.com/simbinealer" target="_blank">comprar-me um café</a>. ☕</p>
+      </div>
+
+    </main>
+
+    <style>
+          .support-section {
+      margin-top: 30px;
+      padding: 15px;
+      background: black;
+      border-left: 5px solid #f4b400;
+      border-radius: 5px;
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    .support-section a {
+      color: #d35400;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .support-section a:hover {
+      text-decoration: underline;
+    }
+
+    </style>
+  </div>
+</body>
+</html>
